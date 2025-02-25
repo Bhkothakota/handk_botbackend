@@ -11,15 +11,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'  # Specify your Python version
-
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
-    - name: Deploy Azure Function App
+        
+    - name: Deploy Azure Web App
       uses: azure/webapps-deploy@v2
       with:
           app-name: "hklaw-backendwebapp-chatbot-dev"
