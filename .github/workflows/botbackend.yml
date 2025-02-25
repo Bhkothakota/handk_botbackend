@@ -1,4 +1,4 @@
-name: Deploy Azure Function App
+name: Deploy Azure Web App
 
 on:
   workflow_dispatch:
